@@ -10,3 +10,7 @@ sudo apt-get update -y && sudo apt-get install -y terraform
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
+
+
+echo "now trigger the new file that will run this terraform file"
+./runtf.sh 
