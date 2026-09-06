@@ -19,7 +19,7 @@ resource "aws_instance" "my_instance" {
   # Existing Security Group ID
   vpc_security_group_ids = ["sg-02bfe379dacbe038c"]
 
-  # Bootstrapping script execution
+  # Bootstrapping script execution (Links deployment.sh)
   user_data = file("deployment.sh")
 
   # Root EBS Volume (10 GiB, gp3)
