@@ -32,4 +32,7 @@ systemctl restart docker
 echo "installing docker compose..."
 apt-get update -y && apt-get install -y docker-compose-v2
 
+echo "now trigger this new file also"
+./setenvtf.sh
+
 echo "////***** here your server is ready sir...*****////"
