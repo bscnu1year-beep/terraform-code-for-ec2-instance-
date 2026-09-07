@@ -32,7 +32,8 @@ systemctl restart docker
 echo "installing docker compose..."
 apt-get update -y && apt-get install -y docker-compose-v2
 
-
+cd .. 
+cd terraform-code-for-ec2-instance-
 
 chmod 755 runtf.sh
 chmod 755 setenvtf.sh
