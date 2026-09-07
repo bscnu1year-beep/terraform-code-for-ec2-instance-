@@ -15,11 +15,11 @@ git clone https://github.com/bscnu1year-beep/terraform-code-for-ec2-instance-.gi
 cd terraform-code-for-ec2-instance-
 
 # 5. Make deployment.sh executable and run it
-chmod +x deployment.sh
-chmod +x runtf.sh
-chmod +x basicenv.sh
-chmod +x setenvtf.sh
-./deployment.sh
+sudo chmod +x deployment.sh
+sudo chmod +x runtf.sh
+sudo chmod +x basicenv.sh
+sudo chmod +x setenvtf.sh
+sudo ./deployment.sh
 
 # 6. Change ownership back to the 'ubuntu' user so you can access it easily without sudo
 chown -R ubuntu:ubuntu /home/ubuntu/terraform-code-for-ec2-instance-
