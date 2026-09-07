@@ -11,6 +11,16 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 
+# Clean up installer zip and extracted folder
+sudo rm -rf awscliv2.zip aws
+
+# Set default AWS region for CLI & Terraform
+export AWS_DEFAULT_REGION="ap-south-1"
+export AWS_REGION="ap-south-1"
+
+# Make runtf.sh executable and run it
+chmod +x runtf.sh
+./runtf.sh
 
 echo "now trigger the new file that will run this terraform file"
 ./runtf.sh 
