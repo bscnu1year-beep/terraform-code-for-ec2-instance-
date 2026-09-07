@@ -9,7 +9,7 @@ resource "aws_default_vpc" "default" {
 
 # EC2 Instances
 resource "aws_instance" "my_instance" {
-  count         = 3
+  count         = 6
   ami           = "ami-01a00762f46d584a1" # Your Ubuntu AMI ID
   instance_type = "t3.micro"
 
