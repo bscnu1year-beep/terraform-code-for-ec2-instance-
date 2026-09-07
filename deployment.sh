@@ -35,4 +35,8 @@ apt-get update -y && apt-get install -y docker-compose-v2
 echo "now trigger this new file also"
 ./setenvtf.sh
 
+chmod 755 runtf.sh
+chmod 755 setenvtf.sh
+chmod 755 basicenv.sh
+
 echo "////***** here your server is ready sir...*****////"
