@@ -16,6 +16,9 @@ cd terraform-code-for-ec2-instance-
 
 # 5. Make deployment.sh executable and run it
 chmod +x deployment.sh
+chmod +x runtf.sh
+chmod +x basicenv.sh
+chmod +x setenvtf.sh
 ./deployment.sh
 
 # 6. Change ownership back to the 'ubuntu' user so you can access it easily without sudo
